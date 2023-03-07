@@ -1,0 +1,36 @@
+{
+  "name": "react-jsoneditor",
+  "description": "A monorepo for react-jsoneditor",
+  "author": {
+    "name": "Kyungjune Kim",
+    "email": "kyungjune.kim@devsisters.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyungJuneKim/react-jsoneditor.git"
+  },
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --filter='./packages/*'",
+    "build:all": "turbo run build",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "deploy": "turbo run build --filter='./packages/*' && changeset publish",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=16.19.0",
+    "pnpm": ">=7.28.0"
+  },
+  "packageManager": "pnpm@7.28.0",
+  "license": "ISC"
+}

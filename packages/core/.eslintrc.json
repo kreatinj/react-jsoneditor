@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "plugins": [
+    "@devsisters/web"
+  ],
+  "extends": [
+    "plugin:@devsisters/web/frontend"
+  ],
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  }
+}
