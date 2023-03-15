@@ -15,6 +15,7 @@ importers:
       '@babel/core': ^7.0.0
       '@devsisters/eslint-plugin-web': ^1.3.0
       '@jsoneditor/react': workspace:*
+      '@jsoneditor/tsconfig': workspace:*
       '@types/node': ^17.0.12
       '@types/react': ^18.0.22
       '@types/react-dom': ^18.0.7
@@ -22,7 +23,6 @@ importers:
       next: ^13.1.1
       react: 18.2.0
       react-dom: 18.2.0
-      tsconfig: workspace:*
       typescript: ^4.5.3
     dependencies:
       '@jsoneditor/react': link:../../packages/core
@@ -32,20 +32,20 @@ importers:
     devDependencies:
       '@babel/core': 7.21.0
       '@devsisters/eslint-plugin-web': 1.3.0_bm3wmhlwm5hcacemxdf6qozyym
+      '@jsoneditor/tsconfig': link:../../packages/tsconfig
       '@types/node': 17.0.45
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       eslint: 7.32.0
-      tsconfig: link:../../packages/tsconfig
       typescript: 4.9.5
 
   packages/core:
     specifiers:
       '@devsisters/eslint-plugin-web': ^1.3.0
+      '@jsoneditor/tsconfig': workspace:*
       '@types/react': ^18.0.17
       eslint: ^7.32.0
       react: ^18.2.0
-      tsconfig: workspace:*
       tsup: ^6.6.3
       typescript: ^4.5.2
       utility-types: ^3.10.0
@@ -55,10 +55,10 @@ importers:
       vanilla-jsoneditor: 0.15.1
     devDependencies:
       '@devsisters/eslint-plugin-web': 1.3.0_bm3wmhlwm5hcacemxdf6qozyym
+      '@jsoneditor/tsconfig': link:../tsconfig
       '@types/react': 18.0.28
       eslint: 7.32.0
       react: 18.2.0
-      tsconfig: link:../tsconfig
       tsup: 6.6.3_typescript@4.9.5
       typescript: 4.9.5
 
